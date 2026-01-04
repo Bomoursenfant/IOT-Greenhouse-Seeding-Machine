@@ -28,6 +28,26 @@ An intelligent IoT-based greenhouse monitoring and control system designed for a
 - **Display**: SSD1306 OLED (I2C interface)
 - **Communication**: UART serial communication
 
+## System Images
+
+### Circuit Simulation
+Circuit schematic designed using Fritzing:
+
+![Circuit Simulation](Images/STM32F103C8T6_DHT11_HCSRO4_bb.png)
+*STM32F103C8T6 with DHT11 and HC-SR04 sensor connections*
+
+### Real Hardware Implementation
+Actual circuit implementation:
+
+![Real Circuit](Images/Real.png)
+*Physical setup of the greenhouse monitoring system*
+
+### Data Output
+Serial data export from the system using Hercules terminal:
+
+![System Data Output](Images/Hercules.png)
+*Real-time sensor data streaming via UART communication*
+
 ### Technology Stack
 
 - **Development Environment**: STM32CubeIDE
