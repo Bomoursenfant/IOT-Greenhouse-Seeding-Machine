@@ -1,0 +1,7 @@
+19:13:33 **** Incremental Build of configuration Debug for project MASTER_LAST ****
+make -j12 all 
+arm-none-eabi-size  MASTER_LAST.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15064	     92	   3308	  18464	   4820	MASTER_LAST.elf
+Finished building: default.size.stdout
+ 

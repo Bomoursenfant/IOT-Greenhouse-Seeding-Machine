@@ -1,0 +1,10 @@
+20:54:57 **** Incremental Build of configuration Debug for project HCSR04_OLED ****
+make -j12 all 
+arm-none-eabi-size  HCSR04_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25808	    108	   3196	  29112	   71b8	HCSR04_OLED.elf
+Finished building: default.size.stdout
+ 
+
+20:54:58 Build Finished. 0 errors, 0 warnings. (took 290ms)
+

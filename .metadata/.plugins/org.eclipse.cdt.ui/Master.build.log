@@ -1,0 +1,15 @@
+11:06:50 **** Incremental Build of configuration Debug for project Master ****
+make -j12 all 
+arm-none-eabi-gcc -o "Master.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\Dai_Hoc_Nam_4\Mang_Cuc_Bo_CN\Project\Master\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Master.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/STM32CUBEIDE/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/ssd1306.o: in function `SSD1306_Init':
+F:/Dai_Hoc_Nam_4/Mang_Cuc_Bo_CN/Project/Master/Debug/../Core/Src/ssd1306.c:228: undefined reference to `hi2c1'
+F:/STM32CUBEIDE/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/ssd1306.o: in function `ssd1306_I2C_WriteMulti':
+F:/Dai_Hoc_Nam_4/Mang_Cuc_Bo_CN/Project/Master/Debug/../Core/Src/ssd1306.c:649: undefined reference to `hi2c1'
+F:/STM32CUBEIDE/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/ssd1306.o: in function `ssd1306_I2C_Write':
+F:/Dai_Hoc_Nam_4/Mang_Cuc_Bo_CN/Project/Master/Debug/../Core/Src/ssd1306.c:657: undefined reference to `hi2c1'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: Master.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+11:06:50 Build Failed. 4 errors, 0 warnings. (took 364ms)
+

@@ -1,0 +1,10 @@
+22:26:54 **** Incremental Build of configuration Debug for project BH1750_Slave2 ****
+make -j12 all 
+arm-none-eabi-size  BH1750_Slave2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21400	    100	   3268	  24768	   60c0	BH1750_Slave2.elf
+Finished building: default.size.stdout
+ 
+
+22:26:54 Build Finished. 0 errors, 0 warnings. (took 305ms)
+
